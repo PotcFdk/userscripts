@@ -1,6 +1,12 @@
 # ZenMarketHistoryTitles
 Adds buttons to make the Auction Watchlist History more readable by replacing Item IDs with Item Titles.
 
+### Before
+![before](info/before.png)
+
+### After
+![after](info/after.png)
+
 ## Installation
 1. Install a userscript addon for your browser. Violentmonkey is recommended, but other ones such as Greasemonkey or Tampermonkey should also work although they're untested.  
 [Violentmonkey for Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)  
