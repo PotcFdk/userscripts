@@ -3,8 +3,8 @@
 // @name        ZenMarket Auction Watchlist History Titles
 // @namespace   https://github.com/PotcFdk
 // @description Adds buttons to make the Auction Watchlist History more readable by replacing Item IDs with Item Titles.
-// @match       https://zenmarket.jp/profile/watchlist.aspx*
-// @version     0.0.2
+// @match       https://zenmarket.jp/profile/watchlist.aspx*?*history=true*
+// @version     0.0.3
 // @grant       none
 // @icon        https://zenmarket.jp/favicon.ico
 // @homepageURL https://github.com/PotcFdk/userscripts/tree/master/ZenMarketHistoryTitles
