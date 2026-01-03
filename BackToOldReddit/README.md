@@ -2,6 +2,9 @@
 Ensures that you stay on old.reddit.com.
 
 ## Installation
-1. Install [Greasemonkey](https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/) (Firefox) or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) (Chrome) / [Tampermonkey Beta](https://addons.opera.com/en/extensions/details/tampermonkey-beta/) (Opera).
-2. Open `https://github.com/PotcFdk/userscripts/raw/master/BackToOldReddit/BackToOldReddit.user.js` or click [here](https://github.com/PotcFdk/userscripts/raw/master/BackToOldReddit/BackToOldReddit.user.js).
+1. Install a userscript addon for your browser. Violentmonkey is recommended, but other ones such as Greasemonkey or Tampermonkey should also work although they're untested.  
+[Violentmonkey for Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)  
+[Violentmonkey for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/eeagobfjdenkkddmbclomhiblgggliao)  
+[Violentmonkey for Google Chrome](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
+2. [Click Here](https://github.com/PotcFdk/userscripts/raw/master/BackToOldReddit/BackToOldReddit.user.js) to open `https://github.com/PotcFdk/userscripts/raw/master/BackToOldReddit/BackToOldReddit.user.js`.
 3. Click `Install`.
