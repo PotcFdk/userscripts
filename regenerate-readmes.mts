@@ -23,15 +23,26 @@ function getDescription (path: string) {
     }
 }
 
+const RGX_MARKDOWN_IMG = /!\[[^\]]+\]\(([^\)]+)\)/g;
+
+function fixupImagePaths (markdown: string) {
+    return markdown.replaceAll(RGX_MARKDOWN_IMG, (match, name) => match.replace (name, 'info/' + name));
+}
+
 readdirSync('.')
     .filter(e => statSync(e).isDirectory())
     .filter(name => existsSync(`${name}/${name}.user.js`))
     .forEach(name => {
-        const description = getDescription(name);
+        let description = getDescription(name);
         
         ok(description);
         strictEqual(typeof description, 'string');
         ok(description.length > 6)
+
+        if (existsSync(`${name}/info`) && statSync(`${name}/info/info.md`).isFile()) {
+            const info = readFileSync(`${name}/info/info.md`, 'utf8');
+            description += `\n\n${fixupImagePaths(info).trim()}`;
+        }
 
         writeFileSync(`${name}/README.md`, template(name, description), 'utf8');
     });
