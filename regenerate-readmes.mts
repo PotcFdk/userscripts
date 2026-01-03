@@ -34,7 +34,7 @@ readdirSync('.')
     .filter(name => existsSync(`${name}/${name}.user.js`))
     .forEach(name => {
         let description = getDescription(name);
-        
+
         ok(description);
         strictEqual(typeof description, 'string');
         ok(description.length > 6)
@@ -46,3 +46,14 @@ readdirSync('.')
 
         writeFileSync(`${name}/README.md`, template(name, description), 'utf8');
     });
+
+writeFileSync('README.md', `# userscripts
+A collection of small/simple user scripts.
+
+` + readdirSync('.')
+        .filter(e => statSync(e).isDirectory())
+        .filter(name => existsSync(`${name}/${name}.user.js`))
+        .map(name => ({ name, description: getDescription(name) }))
+        .map(({ name, description }) => `### [${name}](${name})\n${description}`)
+        .join('\n') + '\n',
+    'utf8');
