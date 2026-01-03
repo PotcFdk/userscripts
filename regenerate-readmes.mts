@@ -15,7 +15,7 @@ ${description}
 const RGX_DESCRIPTION = /^\/\/ @description\s+(.+)$/m;
 
 function getDescription (path: string) {
-    const metaJs = readFileSync (`${path}/${path}.meta.js`, 'utf8');
+    const metaJs = readFileSync (`${path}/${path}.user.js`, 'utf8');
     let match = RGX_DESCRIPTION.exec(metaJs);
     if (match) {
         const description = match[1];
