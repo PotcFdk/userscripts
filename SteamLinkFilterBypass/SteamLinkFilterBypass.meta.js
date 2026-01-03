@@ -2,7 +2,7 @@
 // @author      PotcFdk
 // @name        Steam Link-Filter Bypass
 // @namespace   https://github.com/PotcFdk
-// @description Skips the Steam LinkFilter.
+// @description Skips the Steam link filter.
 // @include     https://steamcommunity.com/linkfilter/*
 // @include     http://steamcommunity.com/linkfilter/*
 // @version     0.1.0

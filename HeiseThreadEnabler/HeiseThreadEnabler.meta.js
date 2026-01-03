@@ -2,7 +2,7 @@
 // @author      PotcFdk
 // @name        HeiseThreadEnabler
 // @namespace   https://github.com/PotcFdk
-// @description Auto-expands the thread view.
+// @description Auto-expands the thread view in the forums / comment sections.
 // @match       https://www.heise.de/forum/heise-online/Kommentare/*/posting-*/show/
 // @version     0.0.0
 // @grant       none
